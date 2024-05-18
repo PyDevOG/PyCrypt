@@ -24,7 +24,7 @@ openssl pkcs12 -export -out mycert.pfx -inkey mycert.key -in mycert.crt
 
 *Locate SignTool:
 
-After installing the Windows 10 SDK, locate the SignTool executable. It is typically found in:
+After installing the Windows 10 SDK, locate the SignTool executable. It is typically found in: C:\\Program Files (x86)\\Windows Kits\\10\\App Certification Kit\\signtool.exe"
 
 #Step 4: Prepare Your Script and Input File
 Save Your Script:
@@ -36,7 +36,7 @@ Save Your Script:
 #Step 5: Run the Script
 Execute the Script:
 
-python pycrypt.py
+python encryptor.py (or use the batch file run_script.bat)
 
 *Verify the Output:
 
@@ -54,10 +54,10 @@ Run the script.
 
 
 Troubleshooting Tips
-Ensure all paths in the script (such as signtool_path) are correct.
-Verify the input file (input.exe) exists and is accessible.
-Check that Python and required libraries are correctly installed.
-Make sure OpenSSL is installed and in your system's PATH for certificate creation.
+*Ensure all paths in the script (such as signtool_path) are correct.
+*Verify the input file (input.exe) exists and is accessible.
+*Check that Python and required libraries are correctly installed.
+*Make sure OpenSSL is installed and in your system's PATH for certificate creation.
 
 Disclaimer: Educational Use Only
 
