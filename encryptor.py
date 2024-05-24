@@ -5,7 +5,7 @@ from Crypto.Random import get_random_bytes
 from base64 import b64encode, b64decode
 import os  # Importing the os module
 
-print("Welcome To PyCrypt. Created by: Flooder Flooder@xmpp.co")
+print("Welcome To PyCrypt. Created by: Py_Dev")
 
 def generate_keys():
     key = RSA.generate(2048)
